@@ -2,7 +2,13 @@
 module.exports = {
     content: ["./**/*.html"],
     theme: {
-      extend: {},
+      extend: {
+        colors: {
+          'bg-body': '#FEFCF3',
+          'text-name':'#C58940',
+          // 'class':'color',
+        },
+      },
     },
     plugins: [],
   }

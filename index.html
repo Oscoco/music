@@ -4,11 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz cumpleaños ❤</title>
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="shortcut icon" href="assets/img/ico.jpg">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+<!-- cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Feliz cumpleaños 🤍</title>
 </head>
-<body>
-    <div>
-        <p class="bg-red-600">sasas</p>
-    </div>
+<body class="bg-[#FEFCF3]">
+    <header class="flex">
+        <section class="w-full h-auto sm:h-64 p-3 flex justify-end  flex-wrap sm:flex-nowrap">
+
+            <div class="font-bold ">
+                <p>Feliz cumpleaños mi chica ♡</p>
+            </div>
+            <br>
+        
+            <div class="sm:w-4/5 sm:h-auto w-full h-52 sm:m-7 m-2 ">
+                <video class="object-cover w-full h-full rounded-md shadow-md" src="./assets/videos/pin.mp4" autoplay loop muted></video>
+
+                <div>
+                    <p class="name text-[#C58940] text-4xl flex items-center">Alison Moran <i class='bx bxs-book-heart'></i></p>
+                </div>
+            </div>
+        </section> 
+
+    </header>
+
+    <!-- <section class="photos w-full h-auto flex ">
+        <div class="bg-black w-full h-60"></div>
+        <div class="bg-red-700 w-full h-60"></div>
+    </section> -->
+   
+
+    <section class="absolute bottom-0 w-full h-auto">
+        <div class="flex justify-center">
+            <div class="morf w-4/5 h-auto rounded-lg shadow-md m-8">
+                <div>
+                    <div class="track-art">Artist name</div>
+                    <div class="track-name">tatatatattata</div>
+                    <div class="track-artist"></div>
+                </div>
+
+                <div class="flex">
+
+                    <div class="flex items-center bg-red-600">
+                        <div class="curren-time">00:00</div>
+                        <input type="range" min="1" max="100" value="0" class="seek_slider mx-1" onchange="seekto()">
+                        <div class="total-duration">00:00</div>
+                    </div>
+
+                    <div class="vulumen-container bg-blue-500 m-1">
+                        <i class='bx bx-volume-full'></i>
+                        <input type="range" min="1" max="100" value="75" class="volumen_slider" onchange="setVolumen()">
+                    </div>
+                </div>
+
+
+                <div class="flex">
+                    <div class="random-track " onclick="randomTrack()">
+                        <i class='bx bx-shuffle' title="Random"></i>
+                    </div>
+
+                    <div class="random-track " onclick="randomTrack()">
+                        <i class='bx bx-skip-previous' title="Previous"></i>
+                    </div>
+
+                    <div class="random-track " onclick="randomTrack()">
+                        <i class='bx bx-play-circle' title="Play"></i>
+                    </div>
+
+                    <div class="random-track " onclick="randomTrack()">
+                        <i class='bx bx-skip-next' title="Next"></i>
+                    </div>
+
+                    <div class="random-track " onclick="randomTrack()">
+                        <i class='bx bx-repeat' title="Repeat"></i>
+                    </div>
+
+                   
+                </div>
+            </div>
+
+           
+        </div>
+
+    </section>
+
+
+
+
+
 </body>
+<script src="./assets/js/main.js"></script>
 </html>
