@@ -21,18 +21,13 @@
 </head>
 <body class="bg-[#FEFCF3]">
     <header class="flex">
-        <section class="w-full h-auto sm:h-64 p-3 flex justify-end  flex-wrap sm:flex-nowrap">
-
-            <div class="font-bold ">
-                <p>Feliz cumpleaños mi chica ♡</p>
-            </div>
-            <br>
+        <section class="w-full h-auto sm:h-64 flex justify-center flex-wrap sm:flex-nowrap">
         
-            <div class="sm:w-4/5 sm:h-auto w-full h-52 sm:m-7 m-2 ">
+            <div class="sm:h-auto w-full h-52 sm:m-3 m-2 ">
                 <video class="object-cover w-full h-full rounded-md shadow-md" src="./assets/videos/pin.mp4" autoplay loop muted></video>
 
-                <div>
-                    <p class="name text-[#C58940] text-4xl flex items-center">Alison Moran <i class='bx bxs-book-heart'></i></p>
+                <div class="">
+                    <p class="name text-[#C58940] text-4xl flex items-center ">Alison Moran <i class='bx bxs-book-heart'></i></p>
                 </div>
             </div>
         </section> 
@@ -45,56 +40,64 @@
     </section> -->
    
 
-    <section class="absolute bottom-0 w-full h-auto">
+    <section class="fixed bottom-0 left-0 right-0 w-full h-auto">
         <div class="flex justify-center">
-            <div class="morf w-4/5 h-auto rounded-lg shadow-md m-8">
-                <div>
-                    <div class="track-art">Artist name</div>
-                    <div class="track-name">tatatatattata</div>
-                    <div class="track-artist"></div>
-                </div>
-
-                <div class="flex">
-
-                    <div class="flex items-center bg-red-600">
-                        <div class="curren-time">00:00</div>
-                        <input type="range" min="1" max="100" value="0" class="seek_slider mx-1" onchange="seekto()">
-                        <div class="total-duration">00:00</div>
+            <div class="bg-black w-full h-auto rounded-xl shadow-md mx-5 my-2 flex justify-center sm:flex-row flex-col">
+                <!-- banne song -->
+                <div class="w-72 flex items-center flex-col">
+                    <div class="img-track absolute -top-16">
+                         <img class="w-24 h-24 m-5 rounded-full border-4 border-cyan-50" src="./assets/img/banner.jpg" alt="">
                     </div>
 
-                    <div class="vulumen-container bg-blue-500 m-1">
+                    <div class="flex justify-center items-center flex-col mt-12 mb-5">
+                        <div class="font-bold">Lana Del Rey</div>
+                        <div class="duration-75 hover:duration-75 hover:text-red-600 hover:font-bold">chemtrails over the country club</div>
+                        <div class="font-bold">Para: ali</div>
+                    </div>
+                </div>
+                <!-- track duration -->
+                <div class="flex sm:flex-row flex-col">
+
+                    <div class="flex items-center flex-col justify-center bg-red-600 px-3">
+
+                        <div class="flex">
+                            <div class="random-track " onclick="randomTrack()">
+                                <i class='bx bx-shuffle' title="Random"></i>
+                            </div>
+        
+                            <div class="random-track " onclick="randomTrack()">
+                                <i class='bx bx-skip-previous' title="Previous"></i>
+                            </div>
+        
+                            <div class="random-track " onclick="randomTrack()">
+                                <i class='bx bx-play-circle' title="Play"></i>
+                            </div>
+        
+                            <div class="random-track " onclick="randomTrack()">
+                                <i class='bx bx-skip-next' title="Next"></i>
+                            </div>
+        
+                            <div class="random-track " onclick="randomTrack()">
+                                <i class='bx bx-repeat' title="Repeat"></i>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="curren-time">00:00</div>
+                            <input type="range" min="1" max="100" value="0" class="seek_slider w-full mx-2" onchange="seekto()">
+                            <div class="total-duration">00:00</div>
+                        </div>
+
+                    </div>
+
+                    <div class="vulumen-container flex justify-center items-center bg-blue-500 m-1">
                         <i class='bx bx-volume-full'></i>
-                        <input type="range" min="1" max="100" value="75" class="volumen_slider" onchange="setVolumen()">
+                        <input type="range" min="1" max="100" value="80" class="volumen_slider" onchange="setVolumen()">
                     </div>
                 </div>
-
-
-                <div class="flex">
-                    <div class="random-track " onclick="randomTrack()">
-                        <i class='bx bx-shuffle' title="Random"></i>
-                    </div>
-
-                    <div class="random-track " onclick="randomTrack()">
-                        <i class='bx bx-skip-previous' title="Previous"></i>
-                    </div>
-
-                    <div class="random-track " onclick="randomTrack()">
-                        <i class='bx bx-play-circle' title="Play"></i>
-                    </div>
-
-                    <div class="random-track " onclick="randomTrack()">
-                        <i class='bx bx-skip-next' title="Next"></i>
-                    </div>
-
-                    <div class="random-track " onclick="randomTrack()">
-                        <i class='bx bx-repeat' title="Repeat"></i>
-                    </div>
-
-                   
-                </div>
+ 
             </div>
 
-           
         </div>
 
     </section>
