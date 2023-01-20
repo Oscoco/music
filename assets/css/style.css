@@ -57,14 +57,6 @@ body {
 	background: #da8ee1;
 }
 
-/* volumen  */
-.reproductor input[type="range"] {
-	cursor: pointer;
-}
-
-.reproductor input[type="range"]:active {
-	cursor: grabbing;
-}
 
 .button-56 {
 	align-items: center;
@@ -132,4 +124,39 @@ body {
 .visa-card {
 	background-image: url("../img/font.card.jpg");
 	object-fit: cover;
+}
+
+
+.controls-music-container{
+    
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progress-song-container{
+    margin-top: 0.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progress-bar{
+    height: 3px;
+    border-radius: 3px;
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    position: relative;
+}
+
+.progress{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+    background-color: #da8ee1;
 }

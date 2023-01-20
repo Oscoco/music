@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,36 +17,89 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Espero que te guste</title>
 </head>
+
 <body class="bg-[#FEFCF3]">
 
-<div class="absolute sm:m-10 m-5  z-10">
-    <a href="./index.html" class="button-56" role="button">Volver &nbsp; <i class='bx bx-heart'></i></a>
-</div>
-
-<audio src="./assets/music/tiamo-page.mp3" autoplay loop type="audio/mp3"></audio>
-    
-<main class="w-full h-screen flex justify-center items-center px-3">
-
-    <div class="bg-white rounded-md shadow-lg p-5 w-auto ">
-        <div>
-            <h1 class="text-center mb-5 text-purple-500 font-bold sm:text-2xl text-xl name">Feliz cumpleaños, mi amor 
-                <i class='bx bx-heart'></i>
-            </h1>
-            <img class="rounded-md shadow-md" src="./assets/img/pochi.gif" alt="">
-        </div>
-
-        <h2 class="text-center m-5 text-purple-500 font-bold text-xl name">Te adoro, linda</h2>
-        <div class="font-semibold">
-            <p class="sm:w-[500px] w-auto text-center">
-                Espero que te guste mi pequeño detalle, <span class="text-purple-500">gracias</span> por compartir tantos momentos tan lindos y <span class="text-purple-500">gracias</span> por ser la <span class="text-purple-500">niña</span> de mis sueños, <span class="text-purple-500">gracias</span> ser tú ademas, por todas las cosas tan lindas que me demuestras día con día <span class="text-purple-500">tiamo linda.</span>
-            </p>
-            <p>
-
-            </p>
-            <br>
-            <p class="text-purple-500">Att:coco</p>
-        </div>
+    <div class="absolute sm:m-10 m-5  z-10">
+        <a href="./index.html" class="button-56" role="button">Volver &nbsp; <i class='bx bx-heart'></i></a>
     </div>
-</main>
+
+    <audio src="./assets/music/tiamo-page.mp3" autoplay loop type="audio/mp3"></audio>
+
+    <main class="w-full h-screen flex justify-center items-center flex-wrap content-center px-3">
+
+        <div class="bg-white rounded-md shadow-lg p-5 w-auto ">
+            <div>
+                <h1 class="text-center mb-5 text-purple-500 font-bold sm:text-2xl text-xl name">Feliz cumpleaños, mi
+                    amor
+                    <i class='bx bx-heart'></i>
+                </h1>
+                <img class="rounded-md shadow-md" src="./assets/img/pochi.gif" alt="">
+            </div>
+
+            <h2 class="text-center m-5 text-purple-500 font-bold text-xl name">Te adoro, linda</h2>
+            <div class="font-semibold">
+                <p class="sm:w-[500px] w-auto text-center">
+                    Espero que te guste mi pequeño detalle, <span class="text-purple-500">gracias</span> por compartir
+                    tantos momentos tan lindos y <span class="text-purple-500">gracias</span> por ser la <span
+                        class="text-purple-500">niña</span> de mis sueños, <span class="text-purple-500">gracias</span>
+                    ser tú ademas, por todas las cosas tan lindas que me demuestras día con día <span
+                        class="text-purple-500">tiamo linda.</span>
+                </p>
+                <p>
+
+                </p>
+                <br>
+                <p class="text-purple-500 name">Att:coco</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center flex-col text-center font-semibold m-5">
+            <p>¿Te gusto el detalle?</p>
+            <div class="flex">
+                <a class="button-56 m-5" id="congrats">Si,&nbsp;<i class='bx bx-heart'></i></a>
+                <a class="button-56 m-5" data-modal-target="popup-modal" data-modal-toggle="popup-modal">No&nbsp;<i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+
+        <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+            <div class="relative w-full h-full max-w-md md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="popup-modal">
+                        <i class='bx bx-x text-2xl'></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+
+                    <div class="p-6 text-center">
+                        <p class="name text-xl text-purple-600">mmm vaya :c</p>
+                        <div class="m-5">
+                            <img  class="rounded-lg shadow-md" src="./assets/img/mmya.jpg" alt="">
+                        </div>
+                        <button data-modal-hide="popup-modal" type="button" class="text-gray-500 bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">mmm oki :c</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+      
+
 </body>
+<!-- modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+<!-- jsConfetti -->
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+<script>
+   
+    const jsConfetti = new JSConfetti()
+
+    document 
+    .querySelector("#congrats")
+    .addEventListener("click", (e) => {
+        jsConfetti.addConfetti();
+    });
+
+    
+</script>
+<script src="./assets/js/main.js"></script>
+
 </html>

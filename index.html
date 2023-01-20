@@ -148,29 +148,38 @@
 
                 <div class="reproductor flex sm:flex-row flex-col w-full">
                     <div class="flex items-center flex-col justify-center px-3 grow">
-                        <div class="flex items-center">
+                        <div class="flex items-center mt-3">
 
-
-                            <div class="random-track track-btn" onclick="randomTrack()">
-                                <i class="bx bx-skip-previous" title="Previous"></i>
+                            <div class="text-3xl">
+                                <i class='bx bx-rewind' title="10 seg" id="Back10"></i>
                             </div>
 
-                            <div class="play-track track-btn text-5xl" onclick="randomTrack()">
-                                <i class="bx bx-play-circle" title="Play"></i>
+                            <div class="text-5xl mx-3 hover:opacity-100 active:">
+                                <img class="w-10 " src="./assets/img/play.svg" title="Play" id="PlayPause">
                             </div>
 
-                            <div class="random-track track-btn" onclick="randomTrack()">
-                                <i class="bx bx-skip-next" title="Next"></i>
+                            <div class="text-3xl">
+                                <i class='bx bx-fast-forward' title="10 seg" id="Plus10"></i>
                             </div>
 
                         </div>
 
-                        <div class="flex items-center w-11/12 font-medium">
-                            <div class="curren-time">00:00</div>
-                            <input type="range" min="1" max="100" value="0" class="w-full mx-2" onchange="seekto()" />
-                            <div class="total-duration">00:00</div>
+                        <audio controls preload="metadata" class="hidden" src="./assets/music/chemtrails over the country club.mp3"></audio>
+
+                        <div class="controls-music-container w-4/5">
+                            <div class="progress-song-container">
+                                <div class="progress-bar">
+                                    <span class="progress"></span>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between items-center">
+                                <span class="m-[0.3rem] font-bold text-bae" id="CurrentSongTime">0:00</span>
+                                <span class="m-[0.3rem] font-bold text-base" id="SongLength"></span>
+                            </div>
                         </div>
-                        <div class="duration-100 font-semibold hover:duration-75 hover:font-bold">
+
+
+                        <div class="duration-100 font-semibold hover:duration-75 hover:font-bold mb-3">
                             <a href="./Tiamo.html">Feliz cumpleaños, Mi chica
                                 <i class="bx bx-heart text-[#CD9FD1]"></i></a>
                         </div>
@@ -179,7 +188,6 @@
             </div>
         </div>
     </section>
-
 
 </body>
 <script src="./assets/js/main.js"></script>
