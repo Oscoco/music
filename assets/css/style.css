@@ -1,129 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
 
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='1' stroke='hsla(295, 37%, 67%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
-  background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+	background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='1' stroke='hsla(295, 37%, 67%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+	background-repeat: repeat;
 }
 
 .morf {
-  background-color: rgba(255, 255, 255, 0.393);
-  box-shadow: 20px 20px 50px rgba(@, 0, 0, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(3px);
+	background-color: rgba(255, 255, 255, 0.393);
+	box-shadow: 20px 20px 50px rgba(@, 0, 0, 0.25);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(3px);
 }
 
 .name {
-  font-family: 'Lobster', cursive;
-  ;
+	font-family: "Lobster", cursive;
 }
 
 /* color ali */
 .first-color {
-  color: #CD9FD1;
+	color: #cd9fd1;
 }
 
 .text-shadow {
-  text-shadow: 2px 0px 8px rgba(192, 192, 192, 0.97);
+	text-shadow: 2px 0px 8px rgba(192, 192, 192, 0.97);
 }
 
 .text-stroke {
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.328);
+	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.328);
 }
-
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset;
-  border-radius: 8px;
+	box-shadow: inset;
+	border-radius: 8px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #de9de4;
-  border-radius: 10px;
+	background: #de9de4;
+	border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #da8ee1;
+	background: #da8ee1;
 }
 
 /* volumen  */
 .reproductor input[type="range"] {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .reproductor input[type="range"]:active {
-  cursor: grabbing;
+	cursor: grabbing;
 }
 
-
-
-/* btn volver */
-/* CSS */
 .button-56 {
-  align-items: center;
-  background-color: #fee6e3;
-  border: 2px solid #111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
-  cursor: pointer;
-  display: flex;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+	align-items: center;
+	background-color: #fee6e3;
+	border: 2px solid #111;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #111;
+	cursor: pointer;
+	display: flex;
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	height: 48px;
+	justify-content: center;
+	line-height: 24px;
+	max-width: 100%;
+	padding: 0 25px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
 }
 
 .button-56:after {
-  background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
-  z-index: -1;
+	background-color: #111;
+	border-radius: 8px;
+	content: "";
+	display: block;
+	height: 48px;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	top: -2px;
+	transform: translate(8px, 8px);
+	transition: transform 0.2s ease-out;
+	z-index: -1;
 }
 
 .button-56:hover:after {
-  transform: translate(0, 0);
+	transform: translate(0, 0);
 }
 
 .button-56:active {
-  background-color: #ffdeda;
-  outline: 0;
+	background-color: #ffdeda;
+	outline: 0;
 }
 
 .button-56:hover {
-  outline: 0;
+	outline: 0;
 }
 
 @media (min-width: 768px) {
-  .button-56 {
-    padding: 0 40px;
-  }
+	.button-56 {
+		padding: 0 40px;
+	}
+}
+
+/* text-card */
+.text-visa {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.visa-card {
+	background-image: url("../img/font.card.jpg");
+	object-fit: cover;
 }
